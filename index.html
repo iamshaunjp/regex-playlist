@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RegEx Form</title>
+        <style media="screen">
+            h1{
+                font-family: arial;
+                font-weight: normal;
+                margin: 20px auto;
+                text-align: center;
+                color: #333;
+            }
+            form{
+                width: 500px;
+                margin: 20px auto;
+            }
+            input{
+                display: block;
+                padding: 8px 16px;
+                font-size: 2em;
+                margin: 20px auto;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 10px;
+                border: 3px solid #ccc;
+                outline: none !important;
+            }
+            input.valid{
+                border-color: #36cc36;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>New User Signup</h1>
+        <form autocomplete="false">
+            <input type="text" name="username" placeholder="username">
+            <input type="text" name="email" placeholder="email">
+            <input type="text" name="password" placeholder="password">
+            <input type="text" name="telephone" placeholder="telephone">
+            <input type="text" name="slug" placeholder="profile slug">
+        </form>
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>
