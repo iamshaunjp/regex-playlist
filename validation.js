@@ -11,19 +11,13 @@ const patterns = {
 
 // validation function
 function validate(field, regex){
-    var valid = regex.test(field.value.trim());
-    console.log(field.value);
-    console.log(regex);
-    var hasValidClass = field.classList.contains('valid');
-    if(valid){
-        if(!hasValidClass){
-            field.classList.add('valid');
-        }
+
+    if(regex.test(field.value)){
+        field.className = 'valid';
     } else {
-        if(hasValidClass){
-            field.classList.remove('valid');
-        }
+        field.className = 'invalid';
     }
+
 }
 
 // attach keyup events to inputs
