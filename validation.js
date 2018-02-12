@@ -1,1 +1,4 @@
-var myregex = /[a-z]+[0-9]+/ig;
+// regex patterns
+const patterns = {
+        telephone: /^\d{11}$/
+};
