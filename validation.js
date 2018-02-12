@@ -5,7 +5,7 @@ const patterns = {
         telephone: /^\d{11}$/,
         username: /^[a-z\d]{5,12}$/i,
         password: /^[\d\w@-]{8,20}$/i,
-        slug: /^[a-z\d-]{6,20}$/
+        slug: /^[a-z\d-]{8,20}$/
 };
 
 // validation function
