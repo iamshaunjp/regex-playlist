@@ -2,7 +2,10 @@ const inputs = document.querySelectorAll('input');
 
 // regex patterns
 const patterns = {
-        telephone: /^\d{11}$/
+        telephone: /^\d{11}$/,
+        username: /^[a-z\d]{5,12}$/i,
+        password: /^[\d\w@-]{8,20}$/i,
+        slug: /^[a-z\d-]{6,20}$/
 };
 
 // validation function
