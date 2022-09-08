@@ -22,3 +22,13 @@ input{
     border: 3px solid #ccc;
     outline: none !important;
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+input:focus{
+    outline-color: #fff;
+    box-shadow: 1px 1px 5px 1px #219af3;
+    border-radius: 6px;
+}
